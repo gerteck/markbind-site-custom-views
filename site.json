@@ -1,0 +1,36 @@
+{
+  "baseUrl": "",
+  "titlePrefix": "",
+  "titleSuffix": "",
+  "ignore": [
+    "_markbind/layouts/*",
+    "_markbind/logs/*",
+    "_site/*",
+    "site.json",
+    "*.md",
+    "*.njk",
+    ".git/*",
+    ".gitignore",
+    "node_modules/*"
+  ],
+  "pagesExclude": ["node_modules/*"],
+  "pages": [
+    {
+      "src": "index.md"
+    },
+    {
+      "glob": ["**/index.md", "**/*.md"]
+    }
+  ],
+  "plugins": [
+    "custom-views"
+  ],
+  "pluginsContext": {
+    "custom-views": {
+      "configUrl": "master.json"
+    }
+  },
+  "deploy": {
+    "message": "Site Update."
+  }
+}
