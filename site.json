@@ -23,13 +23,8 @@
     }
   ],
   "plugins": [
-    "custom-views"
+    "customviews"
   ],
-  "pluginsContext": {
-    "custom-views": {
-      "configUrl": "master.json"
-    }
-  },
   "deploy": {
     "message": "Site Update."
   }

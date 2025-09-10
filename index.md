@@ -8,49 +8,51 @@
 <br>
 
 <div class="bg-primary text-white px-2 py-5 mb-4">
-  Tester 
+   Hello there!
   
 </div>
 
-### Try doing: 
+  Use 
+  * http://127.0.0.1:8080/index.html?profile=profileA
 
-In the URL box: 
+  * http://127.0.0.1:8080/index.html?profile=profileA&state=alt 
 
-#### Assume you are running locally on port 8080
+  * http://127.0.0.1:8080/index.html?profile=profileB
+  * http://127.0.0.1:8080/index.html?profile=profileB&state=all
 
-* `?state=teacher`
-  * http://127.0.0.1:8080/?state=teacher
-* `?state=student`
-  * http://127.0.0.1:8080/?state=student
-* `?state=default` (Or with nothing)
-  * http://127.0.0.1:8080
-
-
-# CustomViews.js Test Page
-
-<!-- Placeholders -->
-<div>
-  <h2>Logo Placeholder</h2>
+  <h2>Placeholder</h2>
   <div data-customviews-placeholder="logo" style="width:150px; height:150px;"></div>
-</div>
 
-<div>
-  <h2>Hero Text Placeholder</h2>
-  <div data-customviews-placeholder="heroText"></div>
-</div>
+  <div data-customviews-placeholder="logo" data-customviews-id="staticAsset">
+    This is a logo that has the value itself. not dynamically rendered.
+  </div>
 
-<!-- Toggles -->
-<div>
-  <h2>Toggle Views</h2>
-  
-  <!-- Beginner toggle -->
-  <div data-customviews-toggle="beginner" data-customviews-id="intro"></div>
+  <h2>Toggles</h2>
 
-  <!-- Intermediate toggle -->
-  <div data-customviews-toggle="intermediate" data-customviews-id="diagram"></div>
+  <div data-customviews-toggle="beginner" data-customviews-id="intro">  
+  </div>  
 
-  <!-- Advanced toggle -->
-  <div data-customviews-toggle="advanced" data-customviews-id="details"></div>
-</div>
+  <div data-customviews-toggle="beginner">    
+    <h2>Beginner View</h2>
+    <p>This content is only visible in the "beginner" view.</p>
 
-<hr>
+  </div>
+
+  <div data-customviews-toggle="advanced" data-customviews-id="advancedIntro">    
+  </div>
+
+  <div data-customviews-toggle="advanced">    
+    <h2>Advanced View</h2>
+    <p>This content is only visible in the "advanced" view.</p>
+    Hello Hello
+
+  </div>
+
+  <div data-customviews-toggle="expert" data-customviews-id="expertIntro">    
+  </div>
+
+  <div data-customviews-toggle="expert">    
+    <h2>Expert View</h2>
+    <p>This content is only visible in the "expert" view.</p>
+
+  </div>
